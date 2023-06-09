@@ -1,24 +1,24 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Please follow these steps to run the application
 
-Things you may want to cover:
+### `Ruby version`
+3.1.1\
+Make sure you install ruby version 3.1.1.\
+You can use rvm or asdf to install several ruby versions on the machine if you have already other ruby versions.
 
-* Ruby version
+### `Bundle install`
+bundle install
 
-* System dependencies
+### `Database setup`
+rails db:create\
+rails db:migrate\
+rails db:seed
 
-* Configuration
+### `Run the server`
+rails s\
+It will run the application on port 3001.\
+API url is http://localhost:3001
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### `Run test suits`
+rspec spec
